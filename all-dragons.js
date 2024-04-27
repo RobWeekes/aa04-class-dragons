@@ -61,7 +61,7 @@ allDragons;
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
 try {
-  module.exports.getDragons = allDragons
+  module.exports.allDragons = allDragons
   module.exports.falkor = falkor
   module.exports.smaug = smaug
 } catch {
