@@ -1,6 +1,6 @@
+const Dragon = require('./classes/dragon.js');
 const EvilDragon = require('./classes/evil-dragon.js');
 const FriendlyDragon = require('./classes/friendly-dragon.js');
-const Dragon = require('./classes/dragon.js');
 
 const falkor = new FriendlyDragon (
   'Falkor',
@@ -49,13 +49,19 @@ console.log(smaug.burnsNemesis());
 
 // const allDragons = Dragon.getDragons();
 
-Dragon.getDragons(falkor, smaug);
+// const allDragons = Dragon.getDragons(falkor, smaug, puff, drogon);
+const allDragons = Dragon.getDragons(falkor, smaug);
+allDragons;
+
+
+// module.exports Dragon.getDragons();
 
 
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
 try {
+  module.exports.getDragons = allDragons
   module.exports.falkor = falkor
   module.exports.smaug = smaug
 } catch {
