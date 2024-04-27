@@ -5,6 +5,12 @@ class Dragon {
         this.name = name;
         this.color = color;
     }
+
+    // INSTANCE methods
+
+
+
+    // CLASS methods
 }
 
 /****************************************************************************/
