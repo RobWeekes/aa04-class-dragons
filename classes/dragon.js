@@ -1,35 +1,35 @@
 class Dragon {
   constructor(name, color) {
-    this.name = name;
-    this.color = color;
+      this.name = name;
+      this.color = color;
   }
 
-  // INSTANCE methods
+  // INSTANCE METHODS
   breathesFire() {
-    return `${this.name} breathes fire everywhere! BURN!!!!`;
+      return `${this.name} breathes fire everywhere! BURN!!!!`;
   }
 
-  // CLASS methods
+  // STATIC METHODS
   static getDragons(...dragons) {
-    // let dragonArr = ...dragons;
-    console.log(dragons);
-
-    let dragonNames = dragons.map((dragon) => dragon.name);
-    console.log(dragonNames);
-    return dragonNames;
+      return dragons.map((dragon) => dragon.name);
   }
 }
 
-// examples
-const puff = new Dragon("Puff", "green");
-console.log(puff);
-console.log(puff.breathesFire());
 
-const toothless = new Dragon("Toothless", "black");
-console.log(toothless);
-console.log(toothless.breathesFire());
+// let puff = new Dragon('Puff', 'green');
+// // console.log(puff);
+// let sparky = new Dragon('Sparky', 'red');
+// // console.log(sparky);
 
-console.log(Dragon.getDragons(puff, toothless)); // [ 'Puff', 'Toothless' ]
+// let snapper = {   // old way, manually created object
+//   name: 'Snapper', color: 'red'
+// }
+// console.log(snapper);
+
+// console.log(puff.breathesFire())
+// console.log(sparky.breathesFire())
+
+// console.log(Dragon.getDragons(puff, sparky, snapper));
 
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
